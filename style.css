@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Luckiest+Guy&family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: pink;
+    display: flex;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to right, purple, skyblue);
+}
+
+.playlist{
+    border-radius: 15px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.playside{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.side {
+    position: relative;
+    width: 100%;
+}
+
+.myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7rem;
+    border-radius: 0 15px 15px 0;
+    object-fit: fill;
+}
+
+.played{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.musicside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 20px;
+    background-color: rgba(161, 4, 161, 0.6);
+    border-radius: 0 15px 15px 0;
+    font-family: 'Nunito', cursive;
+    color: white;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 7rem;
+}
+
+.slidecontainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.slider{
+    -webkit-appearance:none !important;
+    width:90%;
+    height:2px;
+    background:#a3a3a3;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance:none !important;
+    width: 1rem;
+    height: 1rem;
+    background:#fcfcfc;
+    border:2px solid #a3a3a3;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background:#a3a3a3;
+}
+
+.timers{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+@media only screen and (min-width: 425px) {
+    body{
+        background: url(./img/pink_aesthetic-wallpaper-1366x768.jpg);
+        display: flex;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    .box{
+        width: 90%;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 15px;
+        background: linear-gradient(to right, purple, skyblue);
+    }
+    
+    .playlist{
+        border-radius: 15px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .playside{
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .played{
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .side {
+        position: relative;
+        width: 100%;
+    }
+
+    .myVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5.2rem;
+        border-radius: 0 15px 15px 0;
+        object-fit: fill;
+    }
+    
+    .musicside{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 1rem;
+        padding-top: 10px;
+        background-color: rgba(161, 4, 161, 0.6);
+        border-radius: 0 15px 15px 0;
+        font-family: 'Nunito', cursive;
+        color: white;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        height: 5.2rem;
+    }
+    
+    .slidecontainer{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .slider{
+        -webkit-appearance:none !important;
+        width:90%;
+        height:2px;
+        background:#a3a3a3;
+        border:none;
+        outline:none;
+        cursor: pointer;
+    }
+    
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance:none !important;
+        width: 1rem;
+        height: 1rem;
+        background:#fcfcfc;
+        border:2px solid #a3a3a3;
+        border-radius:50%;
+        cursor:pointer;
+    }
+    
+    .slider::-webkit-slider-thumb:hover {
+        background:#a3a3a3;
+    }
+    
+    .timers{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 670px) {
+    body{
+        background: url(./img/pink_aesthetic-wallpaper-1366x768.jpg);
+        display: flex;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    .box{
+        width: 70%;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 15px;
+        background: linear-gradient(to right, purple, skyblue);
+    }
+    
+    .playlist{
+        border-radius: 15px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .playside{
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .played{
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .side {
+        position: relative;
+        width: 100%;
+    }
+    
+    .myVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5.2rem;
+        border-radius: 0 15px 15px 0;
+        object-fit: fill;
+    }
+    
+    .musicside{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 1rem;
+        padding-top: 10px;
+        background-color: rgba(161, 4, 161, 0.6);
+        border-radius: 0 15px 15px 0;
+        font-family: 'Nunito', cursive;
+        color: white;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        height: 5.2rem;
+    }
+    
+    .slidecontainer{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .slider{
+        -webkit-appearance:none !important;
+        width:90%;
+        height:2px;
+        background:#a3a3a3;
+        border:none;
+        outline:none;
+        cursor: pointer;
+    }
+    
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance:none !important;
+        width: 1rem;
+        height: 1rem;
+        background:#fcfcfc;
+        border:2px solid #a3a3a3;
+        border-radius:50%;
+        cursor:pointer;
+    }
+    
+    .slider::-webkit-slider-thumb:hover {
+        background:#a3a3a3;
+    }
+    
+    .timers{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    body{
+        background: url(./img/pink_aesthetic-wallpaper-1366x768.jpg);
+        display: flex;
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+    .box{
+        width: 60%;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 15px;
+        background: linear-gradient(to right, purple, skyblue);
+    }
+    
+    .playlist{
+        border-radius: 15px;
+        display: flex;
+        width: 100%;
+        height: 5.2rem;
+    }
+    
+    .playside{
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .played{
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .side {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+        width: 100%;
+    }
+    .myVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5.2rem;
+        border-radius: 0 15px 15px 0;
+        object-fit: fill;
+    }
+    
+    .musicside{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 1rem;
+        padding-top: 10px;
+        background-color: rgba(161, 4, 161, 0.6);
+        border-radius: 0 15px 15px 0;
+        font-family: 'Nunito', cursive;
+        color: white;
+        position: relative;
+        left: 0px;
+        top: -25px;
+        height: 5.19rem;
+    }
+    
+    .slidecontainer{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .slider{
+        -webkit-appearance:none !important;
+        width:90%;
+        height:2px;
+        background:#a3a3a3;
+        border:none;
+        outline:none;
+        cursor: pointer;
+    }
+    
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance:none !important;
+        width: 1rem;
+        height: 1rem;
+        background:#fcfcfc;
+        border:2px solid #a3a3a3;
+        border-radius:50%;
+        cursor:pointer;
+    }
+    
+    .slider::-webkit-slider-thumb:hover {
+        background:#a3a3a3;
+    }
+    
+    .timers{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .box{
+        width: 30%;
+        height: 34rem;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 15px;
+        background: linear-gradient(to right, purple, skyblue);
+    }
+    
+    .playlist{
+        border-radius: 15px;
+        display: flex;
+        width: 100%;
+        height: 6rem;
+    }
+    
+    .playside{
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .played{
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .side {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+    .myVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6rem;
+        border-radius: 0 15px 15px 0;
+        object-fit: fill;
+    }
+    
+    .musicside{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 1rem;
+        padding-top: 10px;
+        background-color: rgba(161, 4, 161, 0.6);
+        border-radius: 0 15px 15px 0;
+        font-family: 'Nunito', cursive;
+        color: white;
+        position: relative;
+        left: 0px;
+        top: -25px;
+        height: 6rem;
+    }
+
+    .side{
+        width: 100%;
+        height: 1rem;
+    }
+    
+    .slidecontainer{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .slider{
+        -webkit-appearance:none !important;
+        width:90%;
+        height:2px;
+        background:#a3a3a3;
+        border:none;
+        outline:none;
+        cursor: pointer;
+    }
+    
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance:none !important;
+        width: 1rem;
+        height: 1rem;
+        background:#fcfcfc;
+        border:2px solid #a3a3a3;
+        border-radius:50%;
+        cursor:pointer;
+    }
+    
+    .slider::-webkit-slider-thumb:hover {
+        background:#a3a3a3;
+    }
+    
+    .timers{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+
+    
+}

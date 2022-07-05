@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Reeoo Play! - Music Box</title>
+</head>
+
+<body>
+    <div class="box" id="box">
+        <div class="playlist">
+            <div class="playside">
+                <i class="fa-solid fa-circle-play played" id="played1"></i>
+            </div>
+
+            <div class="side">
+                <div class="musicside">
+                    Ali Gatie - What If I Told You
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="0" class="slider" id step="1">
+                    </div>
+                    <div class="timers">
+                        <span class="currentTime"> </span>
+                        <span class="totalTime"> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="playlist">
+            <div class="playside">
+                <i class="fa-solid fa-circle-play played" id="played2"></i>
+            </div>
+            <div class="side">
+                <div class="musicside" id="musicside">
+                    Bebe Rexha - Name Of Love
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="0" class="slider">
+                    </div>
+                    <div class="timers">
+                        <span class="currentTime"> </span>
+                        <span class="totalTime"> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="playlist">
+            <div class="playside">
+                <i class="fa-solid fa-circle-play played" id="played3"></i>
+            </div>
+            <div class="side">
+                <div class="musicside">
+                    Lauren Daigle - You Say
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="0" class="slider">
+                    </div>
+                    <div class="timers">
+                        <span class="currentTime"> </span>
+                        <span class="totalTime"> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="playlist">
+            <div class="playside">
+                <i class="fa-solid fa-circle-play played" id="played4"></i>
+            </div>
+            <div class="side">
+                <div class="musicside">
+                    Glass Animals - Heat Waves
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="0" class="slider">
+                    </div>
+                    <div class="timers">
+                        <span class="currentTime"> </span>
+                        <span class="totalTime"> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="playlist">
+            <div class="playside">
+                <i class="fa-solid fa-circle-play played" id="played5"></i>
+            </div>
+            <div class="side">
+                <div class="musicside">
+                    Falz - Fvck You (Kizz Daniel)
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="0" class="slider">
+                    </div>
+                    <div class="timers">
+                        <span class="currentTime"> </span>
+                        <span class="totalTime"> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="audio" id="audio"></div>
+        
+        <div class="video" id="video"></div>
+
+        
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
