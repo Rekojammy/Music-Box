@@ -19,10 +19,10 @@ const side = document.getElementsByClassName('side');
 
 
 for (let t = 0; t < totalTime.length; t++) {
-    totalTime[t].innerHTML = '00:00';
+    totalTime[t].innerHTML = '0:00';
 }
 for (let c = 0; c < currentTime.length; c++) {
-    currentTime[c].innerHTML = '00:00';
+    currentTime[c].innerHTML = '0:00';
 }
 
 
@@ -61,10 +61,10 @@ for (let i = 0; i < playList.length; i++) {
 
         setTimeout(function () {
             for (let t = 0; t < totalTime.length; t++) {
-                totalTime[t].innerHTML == '00:00';
+                totalTime[t].innerHTML == '0:00';
                 // if (t == i) {
                     if (totalTime[t].innerHTML = 'NaN:NaN') {
-                        totalTime[t].innerHTML = '00:00';
+                        totalTime[t].innerHTML = '0:00';
                     }
                 // }
             }
@@ -94,9 +94,6 @@ for (let i = 0; i < playList.length; i++) {
                             let seconds = Math.floor(current - minutes * 60);
                             if (seconds < 10) {
                                 seconds = '0' + seconds;
-                            }
-                            if (minutes < 10) {
-                                minutes = '0' + minutes;
                             }
                             currentTime[c].innerHTML = `${minutes}:${seconds}`;
                         }
