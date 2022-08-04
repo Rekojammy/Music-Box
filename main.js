@@ -4,11 +4,11 @@ const musicBox = document.getElementById('box'); // musicBox
 const audioHold = document.querySelector('#audio');
 const videoHold = document.querySelector('#video');
 const playList = document.getElementsByClassName('played');
-const tracks = ['./aud/Ali-Gatie-What-If-I-Told-You-That-I-Love-You-via-Naijafinix.com_.mp3',
-    './aud/Bebe-Rexha-In-The-Name-Of-Love-via-Naijafinix.com_.mp3',
-    './aud/Lauren-Daigle-You-Say-Lyrics.mp3',
-    './aud/03 Heat Waves - (SongsLover.com).mp3',
-    './aud/Falz - Fvck You (Kizz Daniel Cover) (NetNaija.com).mp3'
+const tracks = ['./aud/Ali Gatie - What If I Told You That I Love You.mp3',
+    './aud/Bebe Rexha - In The Name Of Love.mp3',
+    './aud/Lauren Daigle - You Say.mp3',
+    './aud/Heat Waves - Glass Animals.mp3',
+    './aud/Falz - Fvck You (Kizz Daniel Cover).mp3'
 ];
 const seeker = document.getElementsByClassName('slider');
 const totalTime = document.getElementsByClassName('totalTime');
@@ -19,10 +19,10 @@ const side = document.getElementsByClassName('side');
 
 
 for (let t = 0; t < totalTime.length; t++) {
-    totalTime[t].innerHTML = '0:00';
+    totalTime[t].innerHTML = '00:00';
 }
 for (let c = 0; c < currentTime.length; c++) {
-    currentTime[c].innerHTML = '0:00';
+    currentTime[c].innerHTML = '00:00';
 }
 
 
@@ -64,11 +64,11 @@ for (let i = 0; i < playList.length; i++) {
                 totalTime[t].innerHTML == '00:00';
                 // if (t == i) {
                     if (totalTime[t].innerHTML = 'NaN:NaN') {
-                        totalTime[t].innerHTML = '0:00';
+                        totalTime[t].innerHTML = '00:00';
                     }
                 // }
             }
-        }, 50)
+        }, 10)
 
 
 
@@ -92,6 +92,12 @@ for (let i = 0; i < playList.length; i++) {
                             let current = audio.currentTime;
                             let minutes = Math.floor(current / 60);
                             let seconds = Math.floor(current - minutes * 60);
+                            if (seconds < 10) {
+                                seconds = '0' + seconds;
+                            }
+                            if (minutes < 10) {
+                                minutes = '0' + minutes;
+                            }
                             currentTime[c].innerHTML = `${minutes}:${seconds}`;
                         }
                     }
